@@ -1,0 +1,3 @@
+kubectl apply -f .\services.yaml
+
+kubectl get services

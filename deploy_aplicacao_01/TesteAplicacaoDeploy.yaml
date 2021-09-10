@@ -1,0 +1,18 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: deployteste
+spec:
+  selector:
+    matchlabels:
+      app: deployteste
+    template:
+      metadata:
+        labels:
+          app: deployteste
+      spec:
+        containers:
+        -name: webapi
+          imagem: nodeapi
+          ports:
+          - containerPort: 80

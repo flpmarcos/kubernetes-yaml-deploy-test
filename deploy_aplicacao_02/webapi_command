@@ -1,0 +1,3 @@
+kubectl apply -f .\webapi.yaml
+
+kubectl get pods
